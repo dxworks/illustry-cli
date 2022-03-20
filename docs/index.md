@@ -1,4 +1,4 @@
-# Dxworks new-project
+# Dxworks illustry-cli
 
 This project wa
 
@@ -7,19 +7,19 @@ This project wa
 Use `npm` to install
 
 ```bash
-npm i -g @dxworks/new-project
+npm i -g @dxworks/illustry-cli
 ```
 
 ## Usage
 
 ```shell
-dx-new-project
+dx-illustry-cli
 ```
 
 or
 
 ```shell
-dxw new-project
+dxw illustry-cli
 ```
 
 ## Contributing

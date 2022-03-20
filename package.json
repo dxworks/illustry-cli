@@ -1,24 +1,24 @@
 {
-  "name": "@dxworks/new-project",
+  "name": "@dxworks/illustry-cli",
   "version": "0.0.0",
   "description": "",
   "keywords": [
     "dxworks",
     "dxw"
   ],
-  "homepage": "https://github.com/dxworks/new-project#readme",
+  "homepage": "https://github.com/dxworks/illustry-cli#readme",
   "bugs": {
-    "url": "https://github.com/dxworks/new-project/issues"
+    "url": "https://github.com/dxworks/illustry-cli/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dxworks/new-project.git"
+    "url": "git+https://github.com/dxworks/illustry-cli.git"
   },
   "license": "Apache-2.0",
   "author": "Mario Rivis <mario.rivis@gmail.com>",
-  "main": "dist/new-project.js",
+  "main": "dist/illustry-cli.js",
   "bin": {
-    "dx-new-project": "dist/index.js"
+    "illustry": "dist/index.js"
   },
   "files": [
     "dist"
@@ -31,14 +31,13 @@
     "create": "npm run build && npm run test",
     "lint": "eslint ./src --ext .ts",
     "lint:fix": "eslint ./src --ext .ts --fix",
-    "local": "npm run build && npm link && npx dx-new-project --help",
+    "local": "npm run build && npm link && npx dx-illustry-cli --help",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "dev": "ts-node src/index.ts",
     "test": "jest --passWithNoTests",
     "test:dev": "jest --watch"
   },
   "dependencies": {
-    "@dxworks/cli-common": "^0.0.20",
-    "@dxworks/ktextensions": "^0.1.0",
     "chalk": "^4.1.2",
     "commander": "^8.2.0"
   },
@@ -69,7 +68,7 @@
   "dxw": {
     "commands": [
       {
-        "file": "dist/new-project.js",
+        "file": "dist/illustry-cli.js",
         "command": "mainCommand"
       }
     ]

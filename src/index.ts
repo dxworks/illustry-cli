@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {mainCommand} from './new-project'
+import { mainCommand } from './illustry-cli'
 
 mainCommand
     .parse(process.argv)
